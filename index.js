@@ -24,6 +24,7 @@ function viewCart() {
   } else {
     var cartItems = "In your cart, you have"
     for(var i=0;i<cart.length;i++) {
+      if(cart)
       cartItems+=` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
     return cartItems
